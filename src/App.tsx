@@ -83,7 +83,7 @@ function App() {
             <UserTable data={persons.data.data.persons} />
           )}
 
-          {!persons.data?.data.persons.length && (
+          {!persons?.data?.data.persons.length && persons.isSuccess && (
             <Flex justify="center">
               <Title>Записи отсутствуют</Title>
             </Flex>
